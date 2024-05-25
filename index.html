@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        img{
+            cursor: pointer;
+            width: 100%;
+        }
+        #box-container{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.411);
+        }
+        #box-item{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-image: url(./img/about_img.jpg.webp);
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #close{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        .font{
+            font-size: 30px;
+            transition: all .3s;
+        }
+        .font:hover{
+            background-color: rgba(128, 128, 128, 0.244);
+            border-radius: 50%;
+            padding: 15px;
+        }
+        .rt{
+            padding: 0 15px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="./img/f_exclusive_product06.png.webp" class="img-item" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="./img/banr.png.webp" class="img-item" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="./img/f_exclusive_product05.png.webp" class="img-item" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="box-container">
+                    <div id="box-item">
+                        <i class="fa-solid fa-xmark font" id="close"></i>
+                        <i class="fa-solid fa-left-long font rt" id="prev"></i>
+                        <i class="fa-solid fa-right-long font rt" id="next"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
